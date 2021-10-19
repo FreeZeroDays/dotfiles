@@ -45,3 +45,6 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     yadm bootstrap
 
 fi
+
+# Run this so you don't have to jump into a new terminal
+exec bash
