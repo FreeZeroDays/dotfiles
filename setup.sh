@@ -46,8 +46,8 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
 # Reloading here
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
-         tmux source "$HOME/.config/tmux/tmux.conf"
          exec bash
+	 tmux source "$HOME/.config/tmux/tmux.conf"
     fi
 
 fi
