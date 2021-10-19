@@ -1,0 +1,20 @@
+# Automatically Indent 
+set autoindent
+
+# Clicky click
+unset mouse
+
+# Sets line numbers... Mandatory.
+set linenumbers
+
+# Use a tab size of "n" columns. Default is 8. 
+set tabsize "4"
+
+# Do case sensitive searches by default.
+set casesensitive
+
+# Create backup files in "filename~"
+set backup
+
+# Set the directory where nano puts unique backup files if file backups are enabled
+set backupdir "~/.backup/nano"
