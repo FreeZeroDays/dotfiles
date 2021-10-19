@@ -13,8 +13,8 @@ As per usual, be wary that these are my dotfiles and not everything may be suita
 
 - You can change neofetch's config to use an image instead. You can find more info in their [wiki](https://github.com/dylanaraps/neofetch/wiki/Image-Backends). For example, I changed following variables in my [config.conf](https://github.com/ZhongXiLu/dotfiles/blob/master/.config/neofetch/config.conf#L691-L713) to show Gura in my neofetch:
 ```
-image_backend="iterm2"
-image_source="$HOME/.config/neofetch/gura.webp"
+image_backend="kitty"
+image_source="$HOME/.config/neofetch/gura.png"
  ```
  
 ### What does "rice" mean?
