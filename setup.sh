@@ -44,7 +44,8 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     chmod +x $HOME/.config/yadm/bootstrap.d/*
     yadm bootstrap
 
-fi
+   if [ "$SYSTEM_TYPE" = "Linux" ]; then
+        exec bash
+   fi
 
-# Run this so you don't have to jump into a new terminal
-exec bash
+fi
