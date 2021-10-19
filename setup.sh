@@ -41,6 +41,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
 # Make bootstrap executable and run
     chmod +x "$HOME/.config/yadm/bootstrap"
+    chmod +x chmod +x $HOME/.config/yadm/bootstrap.d/*
     yadm bootstrap
 
 fi
