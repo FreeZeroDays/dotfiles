@@ -44,4 +44,10 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     chmod +x $HOME/.config/yadm/bootstrap.d/*
     yadm bootstrap
 
+# Reloading here
+    if [ "$SYSTEM_TYPE" = "Linux" ]; then
+         tmux source-file "$HOME/.config/tmux"
+         exec bash
+    fi
+
 fi
