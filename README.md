@@ -15,7 +15,8 @@ As per usual, be wary that these are my dotfiles and not everything may be suita
 ```
 image_backend="iterm2"
 image_source="$HOME/.config/neofetch/gura.webp"
-
+ ```
+ 
 ### What does "rice" mean?
 
 - From [r/unixporn's wiki](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary/#wiki_rice):
