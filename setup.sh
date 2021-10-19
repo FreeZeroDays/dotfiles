@@ -45,8 +45,6 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     yadm bootstrap
 
 # Reloading here
-    tmux source $HOME/.config/tmux/tmux.conf
-
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
          exec bash
     fi
