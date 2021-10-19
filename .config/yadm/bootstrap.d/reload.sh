@@ -3,4 +3,4 @@ tmux new-session -s 'Session1' -d
 tmux source-file "$HOME/.config/tmux"
 
 # Reloading here
-source "$HOME/bashrc"
+exec bash
