@@ -8,12 +8,22 @@ alias tree='tree -C'
 
 alias diff=colordiff
 
+alias untar='tar -xzvf '
+alias plstar='tar -czvf '
+
+# Networking
+alias ports='netstat -tulanp'
+alias hazip='curl icanhazip.com'
+
 alias reload="source ~/.bashrc"
 alias path='echo -e ${PATH//:/\\n}'
 alias stats="history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n10"
 
 alias update='brew update; brew upgrade; brew cleanup'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Penetration Testing
+alias serve='python -m SimpleHTTPServer'
 
 # OSX Specific 
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
