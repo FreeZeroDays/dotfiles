@@ -4,7 +4,7 @@ Run following command:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/DeviantSec/dotfiles/master/setup.sh)"
 ```
-As per usual, be wary that these are my dotfiles and not everything may be suitable to your liking, so be careful if you plan on running the command above.
+Please be wary that these are my dotfiles and not everything may be suitable to your liking. Be careful if you plan on running the command above.
 
 
 # FAQ
