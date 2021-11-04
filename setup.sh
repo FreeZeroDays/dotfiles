@@ -24,7 +24,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     fi
 
     if [ ! -f "$HOME/.config/yadm/bootstrap" ]; then
-        yadm clone https://github.com/DeviantSec/dotfiles
+        yadm clone https://github.com/DeviantSec/dotfiles --no-bootstrap
     fi
     
     if [ ! -d "$HOME/.backup/" ]; then 
