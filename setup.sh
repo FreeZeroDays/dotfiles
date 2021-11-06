@@ -4,6 +4,8 @@ SYSTEM_TYPE=$(uname -s)
 
 if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
+    [ -e $HOME/.zshrc ] && rm $HOME/.zshrc
+
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
         sudo apt update && sudo apt -y upgrade && sudo apt install -y build-essential procps curl file git yadm nmap tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
     fi
@@ -23,7 +25,6 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
         echo "yadm"
     fi
     
-    [ -e $HOME/.zshrc ] && rm $HOME/.zshrc
 
     if [ ! -f "$HOME/.config/yadm/bootstrap" ]; then
         yadm clone https://github.com/DeviantSec/dotfiles --no-bootstrap
