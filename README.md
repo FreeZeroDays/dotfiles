@@ -23,6 +23,10 @@ image_source="$HOME/.config/neofetch/gura.png"
 
 > "Rice" is a word that is commonly used to refer to making visual improvements and customizations on one's desktop. It was inherited from the practice of customizing cheap Asian import cars to make them appear to be faster than they actually were - which was also known as "ricing". Here on r/unixporn , the word is accepted by the majority of the community and is used sparingly to refer to a visually attractive desktop upgraded beyond the default.
 
+### Why a .zshrc and .bashrc?
+
+- Because I have accepted that zsh is significantly better than bash but bash still has a special place in my heart. :) 
+
 ---
 
 If you got any more questions, feel free to create a [new issue](https://github.com/DeviantSec/dotfiles/issues/new)
