@@ -51,5 +51,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     chmod +x $HOME/.config/yadm/bootstrap.d/*
     yadm bootstrap
     
-    exec zsh
 fi
+
+# Start ZSH
+exec zsh
