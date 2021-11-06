@@ -45,8 +45,5 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     yadm bootstrap
 
 # Reloading here
-    if [ "$SYSTEM_TYPE" = "Linux" ]; then
          exec zsh
-    fi
-
 fi
