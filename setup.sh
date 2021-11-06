@@ -22,7 +22,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
     if [[ "$SYSTEM_TYPE" = "Darwin" ]] && [ ! brew list yadm >/dev/null ]; then
         brew install yadm
-        echo "yadm"
+        echo "yadm ✅"
     fi
     
 
@@ -32,10 +32,12 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     
     if [ ! -d "$HOME/.backup/" ]; then 
          mkdir "$HOME/.backup/"
+	 echo "Backup Directory ✅"
     fi 
     
     if [ ! -d "$HOME/.backup/nano" ]; then 
          mkdir "$HOME/.backup/nano"
+	 echo "Nano Logging ✅"
     fi 
 
     if [ ! -d "$HOME/.backup/logs" ]; then
