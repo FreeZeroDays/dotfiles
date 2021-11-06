@@ -83,3 +83,6 @@ fi
 
 # Get our dircolors working
 eval $(dircolors ~/.config/dircolors/.dir_colors)
+
+# Log history into a new file every time terminal is opened
+test "$(ps -ocommand= -p $PPID | awk '{print $1}')" == 'script' || (script -f $HOME/.backup/logs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)
