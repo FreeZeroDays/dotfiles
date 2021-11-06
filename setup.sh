@@ -14,7 +14,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     
     # Switch to zsh
     if [[ "$SHELL" != *"zsh" ]]; then
-    chsh -s $(which zsh)
+    sudo chsh -s $(which zsh)
     fi
 
     if [[ "$SYSTEM_TYPE" = "Darwin" ]] && [ ! command -v brew >/dev/null 2>&1 ]; then
