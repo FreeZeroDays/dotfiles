@@ -23,7 +23,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
         echo "yadm"
     fi
     
-    [ -e $HOME/.zshrc/ ] && rm $HOME/.zshrc/
+    [ -e $HOME/.zshrc ] && rm $HOME/.zshrc
 
     if [ ! -f "$HOME/.config/yadm/bootstrap" ]; then
         yadm clone https://github.com/DeviantSec/dotfiles --no-bootstrap
