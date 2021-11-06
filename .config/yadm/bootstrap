@@ -12,7 +12,7 @@ fi
 
 # Switch to zsh
 if [[ "$SHELL" != *"zsh" ]]; then
-sudo chsh -s $(which zsh)
+    chsh -s $(which zsh)
 fi
 
 # Directory to look for bootstrap executables in
