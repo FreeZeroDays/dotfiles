@@ -50,7 +50,6 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     chmod +x "$HOME/.config/yadm/bootstrap"
     chmod +x $HOME/.config/yadm/bootstrap.d/*
     yadm bootstrap
-
-# Reloading here
-         exec zsh
+    
+    exec zsh
 fi
