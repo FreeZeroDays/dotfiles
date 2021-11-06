@@ -4,7 +4,9 @@ SYSTEM_TYPE=$(uname -s)
 
 if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
+    # Removing .zshrc and .bashrc if they already exist..
     [ -e $HOME/.zshrc ] && rm $HOME/.zshrc
+    [ -e $HOME/.bashrc ] && rm $HOME/.bashrc
 
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
         sudo apt update && sudo apt -y upgrade && sudo apt install -y build-essential procps curl file git yadm nmap tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
