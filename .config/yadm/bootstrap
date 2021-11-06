@@ -10,6 +10,11 @@ if [[ "$SYSTEM_TYPE" = "Darwin" ]]; then
 source "$HOME/.config/yadm/brew.sh"
 fi
 
+# Switch to zsh
+if [[ "$SHELL" != *"zsh" ]]; then
+sudo chsh -s $(which zsh)
+fi
+
 # Directory to look for bootstrap executables in
 BOOTSTRAP_D="${BASH_SOURCE[0]}.d"
 
