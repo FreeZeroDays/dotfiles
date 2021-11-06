@@ -46,7 +46,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
 # Reloading here
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
-         exec bash
+         exec zsh
     fi
 
 fi
