@@ -22,6 +22,8 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
         brew install yadm
         echo "yadm"
     fi
+    
+    [ -e $HOME/.zshrc/ ] && rm $HOME/.zshrc/
 
     if [ ! -f "$HOME/.config/yadm/bootstrap" ]; then
         yadm clone https://github.com/DeviantSec/dotfiles --no-bootstrap
