@@ -9,7 +9,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     [ -e $HOME/.bashrc ] && rm $HOME/.bashrc
 
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
-        sudo apt update && sudo apt -y upgrade && sudo apt install -y build-essential procps curl file git yadm tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
+        sudo apt update && sudo apt -y upgrade && sudo apt install -y build-essential procps curl file git zsh yadm tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
     fi
     
     if [[ "$SYSTEM_TYPE" = "Darwin" ]] && [ ! command -v brew >/dev/null 2>&1 ]; then
