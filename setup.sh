@@ -9,7 +9,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     [ -e $HOME/.bashrc ] && rm $HOME/.bashrc
 
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
-        sudo apt update && sudo apt -y upgrade && sudo apt install -y build-essential procps curl file git yadm nmap tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
+        sudo apt update && sudo apt -y upgrade && sudo apt install -y build-essential procps curl file git yadm tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
     fi
     
     if [[ "$SYSTEM_TYPE" = "Darwin" ]] && [ ! command -v brew >/dev/null 2>&1 ]; then
@@ -27,7 +27,6 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
         echo "yadm ✅"
     fi
     
-
     if [ ! -f "$HOME/.config/yadm/bootstrap" ]; then
         yadm clone https://github.com/DeviantSec/dotfiles --no-bootstrap
     fi
@@ -44,6 +43,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
     if [ ! -d "$HOME/.backup/logs" ]; then
 	 mkdir "$HOME/.backup/logs"
+	 echo "Logging all the commands! ✅"
     fi
 
 # Make bootstrap executable and run
