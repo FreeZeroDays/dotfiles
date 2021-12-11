@@ -11,7 +11,7 @@ Please be wary that these are my dotfiles and not everything may be suitable to 
 
 ### How do you add an image to neofetch?
 
-- You can change neofetch's config to use an image instead. You can find more info in their [wiki](https://github.com/dylanaraps/neofetch/wiki/Image-Backends). For example, I changed following variables in my [config.conf](https://github.com/DeviantSec/dotfiles/tree/master/.config/neofetch) to show Gura in my neofetch:
+- You can change neofetch's config to use an image instead. You can find more info in their [wiki](https://github.com/dylanaraps/neofetch/wiki/Image-Backends). For example, I changed following variables in my [config.conf](https://github.com/FreeZeroDays/dotfiles/tree/master/.config/neofetch) to show Gura in my neofetch:
 ```
 image_backend="kitty"
 image_source="$HOME/.config/neofetch/gura.png"
@@ -29,5 +29,5 @@ image_source="$HOME/.config/neofetch/gura.png"
 
 ---
 
-If you got any more questions, feel free to create a [new issue](https://github.com/DeviantSec/dotfiles/issues/new)
+If you got any more questions, feel free to create a [new issue](https://github.com/FreeZeroDays/dotfiles/issues/new)
 Additionally, these dotfiles were inspired partly by [ZhongXiLu](https://github.com/ZhongXiLu). I highly recommend checking out their repo to view their dotfiles!
