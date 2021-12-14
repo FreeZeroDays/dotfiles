@@ -2,7 +2,7 @@
 
 Run following command:
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/DeviantSec/dotfiles/master/setup.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/FreeZeroDays/dotfiles/master/setup.sh)"
 ```
 Please be wary that these are my dotfiles and not everything may be suitable to your liking. Be careful if you plan on running the command above.
 
