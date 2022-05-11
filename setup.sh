@@ -28,7 +28,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     fi
     
     if [ ! -f "$HOME/.config/yadm/bootstrap" ]; then
-        yadm clone https://github.com/FreeZeroDays/dotfiles --no-bootstrap
+        yadm clone https://github.com/FreeZeroDays/dotfiles
     fi
     
     if [ ! -d "$HOME/.backup/" ]; then 
