@@ -53,8 +53,5 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     
 fi
 
-# Testing a fix in prod
-touch ~/.zshrc
-
 # Start ZSH
 exec zsh
