@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DOTS_THEME_FILE="$HOME/.config/oh-my-zsh/deviant.zsh-theme"
-OHMYZSH_THEME_FILE="$HOME/.oh-my-zsh/custom/themes/deviant.zsh-theme"
+DOTS_THEME_FILE="$HOME/.config/oh-my-zsh/parzival.zsh-theme"
+OHMYZSH_THEME_FILE="$HOME/.oh-my-zsh/custom/themes/parzival.zsh-theme"
 
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
