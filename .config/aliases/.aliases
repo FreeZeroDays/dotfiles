@@ -5,6 +5,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cdd='cd ~/Desktop/'
 alias tree='tree -C'
+alias bat=batcat
 
 alias diff=colordiff
 
