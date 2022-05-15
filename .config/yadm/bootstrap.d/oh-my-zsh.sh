@@ -11,4 +11,6 @@ fi
 [ -L "$OHMYZSH_THEME_FILE" ] && rm "$OHMYZSH_THEME_FILE"
 ln -s "$DOTS_THEME_FILE" "$OHMYZSH_THEME_FILE"
 
+mv "$HOME/.zshrc.pre-oh-my-zsh" "$HOME/.zshrc"
+
 echo "Oh My Zsh ✅"
