@@ -4,12 +4,14 @@ SYSTEM_TYPE=$(uname -s)
 
 if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
-    # Removing .zshrc and .bashrc if they already exist..
-    [ -e $HOME/.zshrc ] && rm $HOME/.zshrc
-    [ -e $HOME/.bashrc ] && rm $HOME/.bashrc
-
+    wget https://raw.githubusercontent.com/FreeZeroDays/dotfiles/master/.zshrc -O ~/.zshrc
+    echo "Grabbed custom .zshrc ✅"
+     
+    wget https://github.com/FreeZeroDays/dotfiles/blob/master/.bashrc -O ~/.bashrc
+    echo "Grabbed custom .bashrc ✅"
+    
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
-        sudo apt update && sudo apt -y upgrade && sudo apt install -y libwacom-common build-essential procps curl file git zsh yadm tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
+        sudo apt update && sudo apt install -y libwacom-common build-essential procps curl file git zsh yadm tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
     fi
 
     if [[ "$SYSTEM_TYPE" = "Darwin" ]] && [ ! command -v brew >/dev/null 2>&1 ]; then
