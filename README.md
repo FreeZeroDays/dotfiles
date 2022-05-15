@@ -1,4 +1,4 @@
-# How to Install
+## How to Install
 
 Run following command:
 ```bash
@@ -6,8 +6,11 @@ Run following command:
 ```
 Please be wary that these are my dotfiles and not everything may be suitable to your liking. Be careful if you plan on running the command above.
 
+## Image
 
-# FAQ
+![dotfiles](https://i.imgur.com/JyIstlo.png)
+
+## FAQ
 
 ### How do you add an image to neofetch?
 
@@ -25,9 +28,9 @@ image_source="$HOME/.config/neofetch/gura.png"
 
 ### Why a .zshrc and .bashrc?
 
-- Because I have accepted that zsh is significantly better than bash but bash still has a special place in my heart. :) 
+- Because I have accepted that zsh is significantly better than bash but it still has a special place in my heart. :) 
 
 ---
 
-If you got any more questions, feel free to create a [new issue](https://github.com/FreeZeroDays/dotfiles/issues/new)
-Additionally, these dotfiles were inspired partly by [ZhongXiLu](https://github.com/ZhongXiLu). I highly recommend checking out their repo to view their dotfiles!
+If you got any more questions, please feel free to create a [new issue](https://github.com/FreeZeroDays/dotfiles/issues/new)
+Finally, these dotfiles were inspired by [ZhongXiLu's](https://github.com/ZhongXiLu).
