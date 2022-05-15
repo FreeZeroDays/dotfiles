@@ -11,7 +11,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     echo "Grabbed custom .bashrc ✅"
     
     if [ "$SYSTEM_TYPE" = "Linux" ]; then
-        sudo apt update && sudo apt install -y libwacom-common build-essential procps curl file git zsh yadm tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
+        sudo apt update && sudo apt install -y libwacom-common build-essential procps bat curl file git zsh yadm tmux htop kitty imagemagick neofetch && sudo apt -y autoremove
     fi
 
     if [[ "$SYSTEM_TYPE" = "Darwin" ]] && [ ! command -v brew >/dev/null 2>&1 ]; then
