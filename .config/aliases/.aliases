@@ -12,6 +12,9 @@ alias diff=colordiff
 alias untar='tar -xzvf '
 alias plstar='tar -czvf '
 
+# kittens
+alias s="kitty +kitten ssh"
+
 # Networking
 alias ports='netstat -tulanp'
 alias hazip='curl icanhazip.com'
