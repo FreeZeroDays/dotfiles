@@ -1,4 +1,4 @@
-#Let's make navigating easier
+# general
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -6,36 +6,36 @@ alias .....="cd ../../../.."
 alias cdd='cd ~/Desktop/'
 alias tree='tree -C'
 alias bat=batcat
-
 alias diff=colordiff
+alias reload="source ~/.bashrc"
+alias path='echo -e ${PATH//:/\\n}'
+alias stats="history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n10"
 
+# archives
 alias untar='tar -xzvf '
 alias plstar='tar -czvf '
 
 # kittens
 alias s="kitty +kitten ssh"
 
-# Networking
+# networking
 alias ports='netstat -tulanp'
 alias hazip='curl icanhazip.com'
 
-alias reload="source ~/.bashrc"
-alias path='echo -e ${PATH//:/\\n}'
-alias stats="history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n10"
-
-alias update='brew update; brew upgrade; brew cleanup'
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
-# Penetration Testing
+# pentesting
 alias serve='python -m SimpleHTTPServer'
+alias weakpass='curl http://www.weakpasswords.net | grep -v @ > weakpasswords.out'
 
-# OSX Specific 
+# osx 
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias btop="bpytop"
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias localip="ipconfig getifaddr en0"
+alias update='brew update; brew upgrade; brew cleanup'
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
+# virus scan (osx)
 verify-exe() {
     xattr -d com.apple.quarantine "$1"
 }
