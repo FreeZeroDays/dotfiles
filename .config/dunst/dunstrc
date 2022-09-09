@@ -6,19 +6,6 @@
     # Which monitor should the notifications be displayed on.
     monitor = 0
 
-    # Display notification on focused monitor.  Possible modes are:
-    #   mouse: follow mouse pointer
-    #   keyboard: follow window with keyboard focus
-    #   none: don't follow anything
-    #
-    # "keyboard" needs a window manager that exports the
-    # _NET_ACTIVE_WINDOW property.
-    # This should be the case for almost all modern window managers.
-    #
-    # If this option is set to mouse or keyboard, the monitor option
-    # will be ignored.
-    follow = mouse
-
     ### Geometry ###
 
     # dynamic width from 0 to 300
