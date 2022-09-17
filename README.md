@@ -4,7 +4,7 @@ Run following command:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/FreeZeroDays/dotfiles/master/setup.sh)"
 ```
-Please be aware that not everything may be suitable to your liking. Be careful if you plan on running the command above.
+Please be aware that not everything may be suitable to your liking. Be careful if you plan on running the command above.. Especially because things may bork. 
 
 ## Images
 
@@ -16,7 +16,7 @@ Please be aware that not everything may be suitable to your liking. Be careful i
 
 ### How do you add an image to neofetch?
 
-- You can change neofetch's config to use an image instead. You can find more info in their [wiki](https://github.com/dylanaraps/neofetch/wiki/Image-Backends). For example, I changed following variables in my [config.conf](https://github.com/FreeZeroDays/dotfiles/tree/master/.config/neofetch) to show a waifu:
+- You can change neofetch's config to use an image instead. You can find more info in their [wiki](https://github.com/dylanaraps/neofetch/wiki/Image-Backends). For example, I changed following variables in my [config.conf](https://github.com/FreeZeroDays/dotfiles/tree/master/.config/neofetch) to show an anime waifu:
 ```
 image_backend="kitty"
 image_source="$HOME/.config/neofetch/valhalla.png"
@@ -30,5 +30,4 @@ image_source="$HOME/.config/neofetch/valhalla.png"
 
 ---
 
-If you have any questions, please feel free to create a [new issue](https://github.com/FreeZeroDays/dotfiles/issues/new). \
-These dotfiles were inspired by [ZhongXiLu's](https://github.com/ZhongXiLu) and [siegan-g's](https://github.com/siegan-g) - thank you both for the inspiration!
+These dotfiles were inspired by both [ZhongXiLu's](https://github.com/ZhongXiLu) and [siegan-g's](https://github.com/siegan-g) - thank you both for the hard work on your setups!
