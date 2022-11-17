@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Notifications
+Exec=/usr/bin/dunst
+GenericName=Notification Manager
+Icon=dunst
+Name=Dunst
+Path=/usr/bin
+StartupWMClass=dunst
+Type=Application
