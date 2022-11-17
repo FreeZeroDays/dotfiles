@@ -7,7 +7,7 @@ alias cdd='cd ~/Desktop/'
 alias tree='tree -C'
 alias bat=batcat
 alias diff=colordiff
-alias reload="source ~/.bashrc"
+alias reload="source ~/.zshrc"
 alias path='echo -e ${PATH//:/\\n}'
 alias stats="history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n10"
 
