@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=polybar
+Exec=sh -c 'polybar mybar 2>&1 | tee -a /tmp/polybar.log'
+Icon=taskbar  # put an icon name here
+StartupNotify=false
+Terminal=false
+NoDisplay=false
