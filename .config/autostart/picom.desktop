@@ -1,0 +1,7 @@
+[Desktop Entry]
+Categories=Network;InstantMessaging;
+Exec=/usr/bin/picom
+Name=Picom
+Path=/usr/bin
+StartupWMClass=picom
+Type=Application
